@@ -1,12 +1,11 @@
 //Business Logic
-function robotSwitch(num) {
+function robotSwitch(num, name) {
   const numArray = [];
-
   for (let i = 0; i <= num; i++) {
     let check = i.toString();
 
     if (check.includes(3)) {
-      numArray.push("Won't you be my neighbor?" + ", ")
+      numArray.push("Won't you be my neighbor " + name + "?" + ", ")
     } else if (check.includes(2)){
       numArray.push("Boop!" + ", ")
     } else if (check.includes(1)){
@@ -21,12 +20,20 @@ return numArray
 
 // User Logic
 $(document).ready(function() {
+  $("form#firstName").submit(function() {
+    event.preventDefault();
+    let name = $("input#name").val();
+    
+    $("#firstName").hide();
+    $("#textbar").show();
+    
   $("form#textbar").submit(function() {
     event.preventDefault();
 
     let num = $("input#num").val();
-    let result = robotSwitch(num);
+    let result = robotSwitch(num, name);
 
     $("#output").append(result);
+    });
   });
 });

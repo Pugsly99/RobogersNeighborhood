@@ -1,3 +1,9 @@
 body {
   background-color: burlywood;
 }
+form {
+  text-align: center;
+}
+#textbar {
+  display: none;
+}
