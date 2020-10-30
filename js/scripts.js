@@ -23,7 +23,7 @@ $(document).ready(function() {
   $("form#firstName").submit(function() {
     event.preventDefault();
     let name = $("input#name").val();
-    
+
     $("#firstName").hide();
     $("#textbar").show();
 
@@ -32,13 +32,16 @@ $(document).ready(function() {
       let num = $("input#num").val();
       let result = robotSwitch(num, name);
 
+      $("#textbar").hide()
       $("#reset").show();
       $(".card").show();
+
       $("#output").append(result);
       $("form#textbar")[0].reset();
     });
 
     $( "button#robotReset" ).click(function() {
+      $("#textbar").show();
       $( "p").empty();
       $(".card").hide();
       $("#reset").hide();

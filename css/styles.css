@@ -1,8 +1,7 @@
 body {
-  background-color: burlywood;
   color: black;
   -webkit-text-fill-color: rgb(21, 85, 35);
--webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
 }
 form {
@@ -20,6 +19,6 @@ form {
   background: linear-gradient(0deg, rgba(1,0,0,1) 0%, rgba(84,85,83,1) 49%, rgba(45,194,107,1) 100%);
 }
 
-#firstName {
-  color: gold;
+input{
+  text-align:center;
 }
