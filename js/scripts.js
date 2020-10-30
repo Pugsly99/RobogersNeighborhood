@@ -34,6 +34,7 @@ $(document).ready(function() {
     let result = robotSwitch(num, name);
 
     $("#output").append(result);
+    $("form#textbar")[0].reset();
     });
   });
 });
