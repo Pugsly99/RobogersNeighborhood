@@ -27,15 +27,19 @@ $(document).ready(function() {
     $("#firstName").hide();
     $("#textbar").show();
 
-  $("form#textbar").submit(function() { 
-    event.preventDefault();
-    let num = $("input#num").val();
-    let result = robotSwitch(num, name);
+    $("form#textbar").submit(function() { 
+      event.preventDefault();
+      let num = $("input#num").val();
+      let result = robotSwitch(num, name);
 
-    $("#reset").show();
-    $(".card").show();
-    $("#output").append(result);
-    $("form#textbar")[0].reset();
+      $("#reset").show();
+      $(".card").show();
+      $("#output").append(result);
+      $("form#textbar")[0].reset();
+    });
+
+    $( "button#robotReset" ).click(function() {
+      $( "p").empty();
     });
   });
 });
