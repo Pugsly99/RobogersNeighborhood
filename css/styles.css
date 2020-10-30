@@ -1,9 +1,15 @@
 body {
   background-color: burlywood;
+color: rgb(21, 85, 35);
 }
 form {
   text-align: center;
+  margin: 50px;
 }
 #textbar {
   display: none;
+}
+.card {
+  display: none;
+  margin: 30px;
 }

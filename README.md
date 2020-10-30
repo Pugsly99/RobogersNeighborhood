@@ -8,7 +8,7 @@
 * _Internet browser
 * _Git Bash_
 
-## Setup option 1
+## Setup 
 * _On Github locate my repository link by clicking the green button that says "Code", this will open a drop down menu to allow for you to copy my https://_
 
 * _Open Git Bash._ 

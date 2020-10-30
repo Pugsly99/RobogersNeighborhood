@@ -26,13 +26,13 @@ $(document).ready(function() {
     
     $("#firstName").hide();
     $("#textbar").show();
-    
-  $("form#textbar").submit(function() {
-    event.preventDefault();
 
+  $("form#textbar").submit(function() { 
+    event.preventDefault();
     let num = $("input#num").val();
     let result = robotSwitch(num, name);
 
+    $(".card").show();
     $("#output").append(result);
     $("form#textbar")[0].reset();
     });
