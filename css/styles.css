@@ -1,6 +1,9 @@
 body {
   background-color: burlywood;
-color: rgb(21, 85, 35);
+  color: black;
+  -webkit-text-fill-color: rgb(21, 85, 35);
+-webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 }
 form {
   text-align: center;
@@ -13,4 +16,10 @@ form {
 .card {
   display: none;
   margin: 30px;
+  background: rgb(1,0,0);
+  background: linear-gradient(0deg, rgba(1,0,0,1) 0%, rgba(84,85,83,1) 49%, rgba(45,194,107,1) 100%);
+}
+
+#firstName {
+  color: gold;
 }

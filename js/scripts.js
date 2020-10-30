@@ -40,6 +40,8 @@ $(document).ready(function() {
 
     $( "button#robotReset" ).click(function() {
       $( "p").empty();
+      $(".card").hide();
+      $("#reset").hide();
     });
   });
 });
