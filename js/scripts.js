@@ -32,6 +32,7 @@ $(document).ready(function() {
     let num = $("input#num").val();
     let result = robotSwitch(num, name);
 
+    $("#reset").show();
     $(".card").show();
     $("#output").append(result);
     $("form#textbar")[0].reset();

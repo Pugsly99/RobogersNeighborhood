@@ -6,9 +6,10 @@ form {
   text-align: center;
   margin: 50px;
 }
-#textbar {
+#textbar, #reset {
   display: none;
 }
+
 .card {
   display: none;
   margin: 30px;
